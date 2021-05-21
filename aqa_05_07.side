@@ -1,0 +1,69 @@
+{
+  "id": "878dadc3-63fe-4a8f-9f99-940f22f9b268",
+  "version": "2.0",
+  "name": "aqa_05_07",
+  "url": "https://dou.ua",
+  "tests": [{
+    "id": "b9834cbb-b475-4b85-afe5-2de96216a88a",
+    "name": "open_dou",
+    "commands": [{
+      "id": "c51d8d4c-00cd-4b41-9ae9-5aad60e3d687",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ab111ab-a555-4197-9727-ccd381ae1daf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ee32e61-26cf-4e7d-b190-f87446028885",
+      "comment": "",
+      "command": "click",
+      "target": "css=.b-head li:nth-child(5) > a",
+      "targets": [
+        ["css=.b-head li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Зарплаты')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://jobs.dou.ua/salaries/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4276eee6-b811-4a43-9703-6f08db61237d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Java вакансии в Киеве",
+      "targets": [
+        ["linkText=Java вакансии в Киеве", "linkText"],
+        ["css=.title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Java вакансии в Киеве')]", "xpath:link"],
+        ["xpath=//div[@id='ajax-vacancies']/h4/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://jobs.dou.ua/vacancies/?search=Java&city=Kyiv&from=widget')]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Java вакансии в Киеве')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "985207b4-f7c2-49a4-81a7-893674180449",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6106a0f1-36e3-4bc8-91cb-f1f67f2990a0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b9834cbb-b475-4b85-afe5-2de96216a88a"]
+  }],
+  "urls": ["https://dou.ua/"],
+  "plugins": []
+}
